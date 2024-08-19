@@ -1,0 +1,77 @@
+body {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main {
+  height: 70px;
+  width: 150px;
+  background-color: #724e91;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 2px 2px 5px black;
+  z-index: 0;
+}
+
+.circle-light {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  box-shadow: 1px 1px 5px #fff;
+}
+
+#light {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  font-size: 29px;
+}
+
+.path {
+  height: 50px;
+  width: 160px;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.circle-light,
+.circle-dark,
+#light,
+#dark {
+  cursor: pointer;
+}
+
+.circle-dark {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  box-shadow: 1px 1px 5px black;
+}
+
+#dark {
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  font-size: 26px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
