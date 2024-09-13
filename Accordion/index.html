@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accordian</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FAQ</h1>
+      <div class="question">
+        <h1>1.What is what?</h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">What is what.And that's it.</div>
+
+      <div class="question">
+        <h1>2.What is JavaScript, and how is it used?</h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">
+        JavaScript is a high-level, interpreted programming language primarily
+        used to make web pages interactive. It can manipulate HTML and CSS,
+        handle events, create dynamic content, and more. JavaScript is executed
+        on the client side in a browser, but with environments like Node.js, it
+        can also run on the server side.
+      </div>
+
+      <div class="question">
+        <h1>
+          3.What is the difference between let, var, and const in JavaScript?
+        </h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">
+        var: Declares a variable with function scope or globally if declared
+        outside a function. It can be redeclared and updated. let: Declares a
+        block-scoped variable. It can be updated but not redeclared in the same
+        scope. const: Declares a block-scoped constant. It must be initialized
+        when declared and cannot be updated or redeclared.
+      </div>
+
+      <div class="question">
+        <h1>4.What is the difference between == and === in JavaScript?</h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">
+        ==: Performs type coercion and compares two values for equality after
+        converting them to a common type. ===: Strict equality operator that
+        compares both value and type. No type conversion is performed.
+      </div>
+
+      <div class="question">
+        <h1>5.What are closures in JavaScript?</h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">
+        A closure is a function that has access to its own scope, the scope of
+        the outer function, and the global scope. Closures allow functions to
+        access variables from an outer function even after the outer function
+        has returned. This is useful for data encapsulation and maintaining
+        state across function calls.
+      </div>
+
+      <div class="question">
+        <h1>6.What is the event loop in JavaScript?</h1>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+      <div class="answer">
+        The event loop is a mechanism in JavaScript that allows asynchronous
+        operations (like setTimeout, Promises, and I/O tasks) to be handled
+        without blocking the main thread. JavaScript is single-threaded, so the
+        event loop manages the execution of multiple asynchronous operations by
+        pushing callback functions onto a message queue, which the loop
+        processes once the call stack is empty.
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
