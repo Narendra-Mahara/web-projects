@@ -12,7 +12,58 @@
     <title>currency converter</title>
   </head>
   <body>
-    <h1 class="font-extralight text-center">Hello world!</h1>
+    <div class="container h-svh flex flex-col items-center justify-center">
+      <h1>currency converter</h1>
+      <div class="wrapper flex flex-col border border-sky-200">
+        <!-- --Amount-- -->
+        <div class="flex flex-col relative">
+          <label for="amount">Enter amount</label>
+          <i class="absolute top-6 left-1">ico</i>
+          <input type="text" name="amount" id="amount" />
+        </div>
+
+        <!-- --From to-- -->
+        <div class="wrapper-to-from flex items-center">
+          <!-- from -->
+          <div class="from">
+            <h3>From</h3>
+
+            flagicon
+            <select name="select" id="">
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+            </select>
+          </div>
+
+          <!-- exchange icon -->
+          <div class="exchange-icon">
+            <i>ExchangeIcon</i>
+          </div>
+
+          <!-- to -->
+          <div class="to">
+            <h3>To</h3>
+            flagicon
+            <select name="select" id="">
+              <option value="">USD</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+              <option value="">NPR</option>
+            </select>
+          </div>
+        </div>
+        <!-- ----Result----- -->
+        <div class="result text-center">100 NPR = 1USD</div>
+        <!-- ----Button---- -->
+        <div class="flex justify-center">
+          <button>convert</button>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
