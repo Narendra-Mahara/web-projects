@@ -9,58 +9,89 @@
       href="../images/favicon.ico"
       type="image/x-icon"
     />
-    <title>currency converter</title>
+    <!-- ---icons--- -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .remove-arrow::-webkit-inner-spin-button,
+      .remove-arrow::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+    <title>currency converter - Narendra Mahara</title>
   </head>
   <body>
-    <div class="container h-svh flex flex-col items-center justify-center">
-      <h1>currency converter</h1>
-      <div class="wrapper flex flex-col border border-sky-200">
+    <div
+      class="container h-svh flex flex-col items-center justify-center bg-purple-800"
+    >
+      <div
+        class="wrapper h-[350px] w-[300px] flex flex-col border border-gray-500 rounded-md p-2 bg-white"
+      >
+        <h1 class="text-3xl font-serif mb-4 text-center">Currency Converter</h1>
         <!-- --Amount-- -->
         <div class="flex flex-col relative">
-          <label for="amount">Enter amount</label>
-          <i class="absolute top-6 left-1">ico</i>
-          <input type="text" name="amount" id="amount" />
+          <label class="text-lg" for="amount">Enter amount</label>
+          <input
+            class="h-9 border border-black outline-none rounded-md px-2 remove-arrow"
+            type="number"
+            name="amount"
+            id="amount"
+          />
         </div>
 
         <!-- --From to-- -->
-        <div class="wrapper-to-from flex items-center">
+        <div class="wrapper-to-from flex items-center mt-5 justify-between">
           <!-- from -->
           <div class="from">
-            <h3>From</h3>
-
-            flagicon
-            <select name="select" id="">
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-            </select>
+            <h3 class="mb-2">From</h3>
+            <div class="flex p-2 rounded-md border border-black">
+              <img src="https://flagsapi.com/US/flat/24.png" />
+              <select class="bg-white" name="select" id="">
+                <option value="">USD</option>
+                <option value="">NPR</option>
+                <option value="">NPR</option>
+                <option value="">NPR</option>
+                <option value="">NPR</option>
+              </select>
+            </div>
           </div>
 
           <!-- exchange icon -->
-          <div class="exchange-icon">
-            <i>ExchangeIcon</i>
+          <div class="exchange-icon cursor-pointer mt-8">
+            <!-- <i class="ri-arrow-left-right-fill"></i> -->
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
           </div>
 
           <!-- to -->
           <div class="to">
-            <h3>To</h3>
-            flagicon
-            <select name="select" id="">
-              <option value="">USD</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-              <option value="">NPR</option>
-            </select>
+            <h3 class="mb-2">To</h3>
+            <div class="flex p-2 rounded-md border border-black">
+              <img src="https://flagsapi.com/NP/flat/24.png" />
+              <select class="bg-white" name="select" id="">
+                <option value="">NPR</option>
+                <option value="">USD</option>
+                <option value="">NPR</option>
+                <option value="">NPR</option>
+                <option value="">NPR</option>
+              </select>
+            </div>
           </div>
         </div>
         <!-- ----Result----- -->
-        <div class="result text-center">100 NPR = 1USD</div>
+        <div class="result text-center my-5">
+          <span>1USD = 100 NPR</span>
+        </div>
         <!-- ----Button---- -->
         <div class="flex justify-center">
-          <button>convert</button>
+          <button
+            class="w-full bg-purple-800 text-white text-xl rounded-md h-10"
+          >
+            convert
+          </button>
         </div>
       </div>
     </div>
