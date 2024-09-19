@@ -1,12 +1,10 @@
 let ele = document.getElementsByClassName("element")[0];
 let input = document.getElementsByTagName("input")[0];
-// let filter = document.getElementsByTagName("select")[0];
 ele.style.display = "flex";
 ele.style.flexWrap = "wrap";
 
 const fetchCountry = async () => {
   let response = await fetch("https://restcountries.com/v3.1/all");
-  console.log(response.status);
   let data = await response.json();
   continent = data.map((element) => element.region);
   data.forEach((element) => {
@@ -58,23 +56,3 @@ input.addEventListener("input", (e) => {
   });
 });
 
-// filter.addEventListener("change", (e) => {
-//   e.preventDefault();
-//   const filterValue = filter.value.toLowerCase();
-//   const countryDivs = document.querySelectorAll(".element > div");
-//   countryDivs.forEach((div) => {
-//     if (continent !== filterValue) {
-//       div.style.display = "none";
-//     } else {
-//       div.style.display = "flex";
-//     }
-//   });
-// });
-
-let data = async () => {
-  let response = await fetch("https://restcountries.com/v3.1/all");
-  let data = await response.json();
-  return data;
-};
-
-console.log(data());
