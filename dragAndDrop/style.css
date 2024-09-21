@@ -10,12 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #6b21a8;
 }
 
 .wrapper {
   width: 40%;
-  height: 50%;
   background-color: #f1ecec;
+  height: 50%;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -47,7 +48,7 @@
 }
 
 .wrapper p span {
-  color: blue;
+  color: #6b21a8;
 }
 @media screen and (max-width: 936px) {
   .wrapper {
